@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Life Nutrición</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f5e0;
+      display: flex;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #2e4d2b;
+      min-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 60px;
+    }
+
+    .nav-menu li {
+      border-bottom: 1px solid #3e8e41;
+    }
+
+    .nav-menu li a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-menu li a:hover {
+      background-color: #3e8e41;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    header {
+      font-family: 'Playfair Display', serif;
+      background-color: #DAF7A6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .main-content h1 {
+      font-family: 'Georgia', serif;
+      font-size: 74px;
+      color: black;
+      text-shadow: 2px 2px 5px #aad576;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      transition: transform 0.4s ease, color 0.4s ease;
+      cursor: pointer;
+    }
+    .main-content h2{
+      font-family: Arial;
+      font-size: 40px;
+      text-align: center;
+      color: #15944b;
+
+    }
+
+    .main-content p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.5em;
+    }
+    .header-img{
+      justify-content: left;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .food-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 90px;
+      margin-top: 80px;
+    }
+
+    .food-images img {
+      width: 350px;
+      height: 250px;
+    }
+    .social-links img {
+     width: 100px; /* Tamaño reducido */
+     height: 100px;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+     border-radius: 15px;
+     padding: 20px;
+     gap: 90px;
+    }
+
+    .social-links img:hover {
+     transform: scale(1.2);
+     opacity: 0.8;
+    }
+
+    footer {
+      background-color: #DAF7A6;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/pagina%20web%2002.html">INICIO</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/acerca%20de%20nosotros.html">ACERCA DE NOSOTROS</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/Formulario.html#">REGISTRO</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/SERVICIOS.02.html">SERVICIOS</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/agenda%20cita.html">BLOG</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <link rel="stylesheet" type="text/css" href="Lucida Handwriting">
+    <header>
+      <h1>FORLIFE</h1>
+      <p>Nutrición para mejorar tu estilo de vida</p>
+    </header>
+      <h2>¿Tienes problemas con tu alimentación?</h2>
+    <p>¿Quieres mejorar tus hábitos alimenticios? Nuestros servicios son la mejor opción. Tenemos una variedad de planes alimenticios ajustados a tu presupuesto y estilo de vida.</p>
+   
+    <div class="food-images">
+      <img src="https://i.pinimg.com/736x/2f/26/00/2f2600adc417771b401e42d39cf1346a.jpg">
+      <img src="https://i.pinimg.com/736x/5d/ed/f3/5dedf32fd60098b40264708e2094ca16.jpg">
+      <img src="https://i.pinimg.com/736x/fa/a3/cf/faa3cfec9ef37f896cb5b7bf1f54845b.jpg">
+    </div>
+
+    <div class="social-links">
+      <p>Síguenos en nuestras redes sociales:</p>
+      <style type="text/css">
+        p{
+          background-color: dfffe0;
+          border-left: 8px solid #4caf50;
+          padding: 15px 20px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #2e7d32;
+          border-radius: 8px;
+          margin-top: 20px;
+          box-shadow: 0 2px 6px rgb(0, 0, 0 / 0.1);
+          animation: resaltar 2s ease-in-out;
+        }
+      </style>
+      <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 For Life Nutrición - Todos los derechos reservados a Areli Arroyo y Sofia Rodriguez.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

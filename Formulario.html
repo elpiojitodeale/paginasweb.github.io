@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Life Nutrición</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f5e0;
+      display: flex;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #2e4d2b;
+      min-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .nav-menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 60px;
+    }
+
+    .nav-menu li {
+      border-bottom: 1px solid #3e8e41;
+    }
+
+    .nav-menu li a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-menu li a:hover {
+      background-color: #3e8e41;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    header {
+      font-family: 'Playfair Display', serif;
+      background-color: #DAF7A6;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .main-content h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: #2e4d2b;
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    .main-content p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.4em;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .social-links img {
+     width: 100px;
+     height: 100px;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+     border-radius: 15px;
+     padding: 20px;
+     gap: 90px;
+    }
+
+    .social-links img:hover {
+     transform: scale(1.2);
+     opacity: 0.8;
+    }
+
+    .social-links a:hover {
+      background-color: #a6e9c3;
+    }
+
+    footer {
+      background-color: #DAF7A6;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    body {
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      background-color: #f7f9e9;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: #e9fbbf;
+      padding: 10px 1px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #224422;
+    }
+
+    .form-group {
+      margin-bottom: 40px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #224422;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1b351b;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/pagina%20web%2002.html">INICIO</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/acerca%20de%20nosotros.html">ACERCA DE NOSOTROS</a></li>
+            <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/Formulario.html#">REGISTRO</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/SERVICIOS.02.html">SERVICIOS</a></li>
+      <li><a href="file:///C:/Users/areli/OneDrive/Escritorio/paginas/agenda%20cita.html">BLOG</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <link rel="stylesheet" type="text/css" href="Lucida Handwriting">
+    <header>
+      <h1>FOR LIFE</h1>
+      <p>Es mejor una vida saludable</p>
+    </header>
+     <div class="form-container">
+    <h2>Resgístrate</h2>
+    <form action="formulario.html" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+    <div class="social-links">
+      <p>Síguenos en nuestras redes sociales:</p>
+      <style type="text/css">
+        p{
+          background-color: dfffe0;
+          border-left: 8px solid #4caf50;
+          padding: 15px 20px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #2e7d32;
+          border-radius: 8px;
+          margin-top: 20px;
+          box-shadow: 0 2px 6px rgb(0, 0, 0 / 0.1);
+          animation: resaltar 2s ease-in-out;
+        }
+      </style>
+      <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube"></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 For Life Nutrición - Todos los derechos reservados por Areli y Sofi.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
